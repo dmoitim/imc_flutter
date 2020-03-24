@@ -6,7 +6,7 @@ class ImcBloc {
   var result = "Preencha os dados para calcular seu IMC";
 
   calculate() {
-    double altura = double.parse(alturaCtrl.text);
+    double altura = double.parse(alturaCtrl.text) / 100;
     double peso = double.parse(pesoCtrl.text);
     double imc = peso / (altura * altura);
 
