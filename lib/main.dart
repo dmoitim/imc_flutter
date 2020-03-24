@@ -1,18 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:imc_flutter/ui/android/pages/home.page.dart';
+import 'package:imc_flutter/ui/android/material-app.dart';
+import 'package:imc_flutter/ui/ios/cupertino-app.dart';
 
-void main() => runApp(App());
-
-class App extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'IMC',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
-    );
-  }
-}
+void main() => runApp(MyMaterialApp());
+//void main() => runApp(MyCupertinoApp());
